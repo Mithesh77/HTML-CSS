@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First css File</title>
+    <style>
+        p{
+            color: red;
+            background-color: yellow;
+        }
+        h4{
+            color: aqua;
+            background-color: black;
+        }
+        /* for id use the # symbol */
+        #101  
+        {
+            color: beige;
+            background-color : violet ;
+        }
+        /* for class use the . symbol */
+        .red{
+            color :pink;
+            background-color: black;
+        }
+        /* * used to change for all elements in the file  */
+        *{
+            color : red;
+            margin: 0; 
+            padding: 0; 
+        }
+        /* we can apply multiple elements by separating comma */
+        h5,h3,div{
+            color: blueviolet;
+            background-color: green;
+        }
+        /* sections and div . or # we can apply */
+        section.name
+        {
+            color: azure;
+            background-color: brown;
+            border-color: black;
+        } 
+
+    </style>
+</head>
+<body>
+    <!-- inline style always override external and internal style -->
+    <div id="101" style="background-color:blue ;"> 
+        My name is Mithesh
+    </div>
+    <div class="red">
+        b.tech
+    </div>
+    <p>
+        Good morning to all 
+    </p>
+    <h4>AIML</h4>
+    <section id="20">
+        css first file
+    </section>
+    <section class="red">
+        all the best
+    </section>
+    <h3> I am Student</h3>
+    <h5>Google</h5>
+    <div id="131">
+         Anurag university
+    </div>
+    <section class="name">
+        Machine learning
+    </section>
+</body>
+</html>

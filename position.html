@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            display:inline;
+        } 
+        header{
+            background-color: black;
+            color: white;    
+            height: 70px; 
+            z-index: 1;
+        }
+        p{
+            text-align: center;
+            border: 2px solid red;
+        }
+        .container{
+            background-color: aqua;
+            width: 60vw;
+            height: 50vh;
+            margin: auto;
+            padding: 0 30px;
+            z-index: 2;
+        } 
+        .box{
+            background-color: greenyellow;
+            width: 20vw;
+            height: 30vh;
+            position: absolute;
+            /* position: relative */
+            /* right: 0px;
+            left: 252px;
+            bottom: 0px;
+            top: 26px; */
+            /* In relative top means bottom right means left and vice versa. it is parent relatively moves*/
+            /* static is always default we can't change position like top,bottom,right,left */
+            /* In absolute one is placed on other and other is hidden. it moves html tags*/
+            /* In fixed it fix to the windows */
+            /* In Sticky it is also stick to window while scrolling it can't move or fix or stick to window  */
+        }
+        .box1{
+             background-color: blue;
+             width: 50vw;
+            height: 30vh;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Context</li>
+        </ul>
+    </header>
+    <div class="container">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi impedit fugit numquam unde excepturi cupiditate assumenda. Soluta, labore, ipsam, dolores deserunt cumque et nulla facilis possimus at voluptatem praesentium natus.
+        </p>
+        <div class="box">
+            I am Student
+        </div>
+        <div class="box1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione natus atque illum rerum quam nisi officiis sint porro incidunt hic.
+        </div>
+    </div>
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Carrot</li>
+    </ul>
+</body>
+</html>
